@@ -1,4 +1,6 @@
+#
 # ~/.bashrc
+#
 
 [[ $- != *i* ]] && return
 
@@ -136,17 +138,17 @@ export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1
 # Alias Time
 
 # Ease Of Use
-alias rm="rm -i"																# Prompt before removal
-alias mv="mv -i"																# Prompt before move
-alias cp="cp -i"																# Prompt before overwriteing
-alias ln="ln -i"																# Prompt whether to remove destinations
-alias la="ls -a"																# ls but with the --all modifier
-alias df='df -h'                      			    # human-readable sizes
-alias free='free -m'                      			# show sizes in MB
-alias cdhdd="cd /run/media/baston/ExternalHDD" 	# cd directly into mounted hdd
-alias c="clear"																	# Shortened clear to c because I'm supper lazy
-alias fk='eval "sudo $(history -p !!)"'					# Forgot to sudo say fk it
-alias reboot="sudo reboot"											# Change reboot to sudo reboot
+alias rm="rm -i"				# Prompt before removal
+alias mv="mv -i"				# Prompt before move
+alias cp="cp -i"				# Prompt before overwriteing
+alias ln="ln -i"				# Prompt whether to remove destinations
+alias la="ls -a"				# ls but with the --all modifier
+alias df='df -h'                                # human-readable sizes
+alias free='free -m'                            # show sizes in MB
+alias cdhdd="cd /run/media/baston/ExternalHDD"  # cd directly into mounted hdd
+alias c="clear"					# Shortened clear to c because I'm supper lazy
+alias fk='eval "sudo $(history -p !!)"'		# Forgot to sudo say fk it
+alias reboot="sudo reboot"			# Change reboot to sudo reboot
 alias cpuspeed="cat /proc/cpuinfo | grep 'cpu MHz'"	# Read current CPU speed in Mhz
 
 # Fun
