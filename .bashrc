@@ -1,4 +1,4 @@
-#
+# 
 # ~/.bashrc
 #
 
@@ -135,37 +135,37 @@ ex ()
 # better yaourt colors
 export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1;41;5:votes=1;44:dsc=0:other=1;35"
 
-# Alias Time
+# Lota Alias
 
 # Ease Of Use
-alias rm="rm -i"				# Prompt before removal
-alias mv="mv -i"				# Prompt before move
-alias cp="cp -i"				# Prompt before overwriteing
-alias ln="ln -i"				# Prompt whether to remove destinations
-alias la="ls -a"				# ls but with the --all modifier
-alias df='df -h'                                # human-readable sizes
-alias free='free -m'                            # show sizes in MB
-alias cdhdd="cd /run/media/baston/ExternalHDD"  # cd directly into mounted hdd
-alias c="clear"					# Shortened clear to c because I'm supper lazy
-alias fk='eval "sudo $(history -p !!)"'		# Forgot to sudo say fk it
-alias reboot="sudo reboot"			# Change reboot to sudo reboot
-alias cpuspeed="cat /proc/cpuinfo | grep 'cpu MHz'"	# Read current CPU speed in Mhz
+alias rm="rm -i"						# Prompt before removal
+alias mv="mv -i"						# Prompt before move
+alias cp="cp -i"						# Prompt before overwriteing
+alias ln="ln -i"						# Prompt whether to remove destinations
+alias la="ls -a"						# ls but with the --all modifier
+alias df='df -h'                        		        # human-readable sizes
+alias free='free -m'                    		        # show sizes in MB
+alias cdhdd="cd /run/media/baston/ExternalHDD"			# cd directly into mounted hdd
+alias c="clear"							# Shortened clear to c because I'm supper lazy
+alias fk='eval "sudo $(history -p !!)"'				# Forgot to sudo say fk it
+alias reboot="sudo reboot"					# Change reboot to sudo reboot
+alias cpuspeed="cat /proc/cpuinfo | grep 'cpu MHz'"		# Read current CPU speed in Mhz
 
 # Fun
-alias more=less
-alias parrot="curl parrot.live"
-alias myip='curl ipinfo.io/ip'
-alias matrix="cmatrix -a -C cyan"
-alias yeet="echo 'YEET YEET YEET YEET YEET YEET YEET YEET YEET YEET YEET YEET' | figlet"
-alias weather="curl http://wttr.in/Aberdeen"
-alias moon="curl http://wttr.in/moon"
+alias more=less							# Less is more
+alias parrot="curl parrot.live"					# Shows a rainbow parrot danceing
+alias myip='curl ipinfo.io/ip'					# Prints public IPv4 address
+alias matrix="cmatrix -a -C cyan"				# The matrix command I use
+alias yeet="echo 'YEET YEET YEET YEET YEET YEET YEET YEET YEET YEET YEET YEET' | figlet" # Need I say more
+alias weather="curl http://wttr.in/Aberdeen"			# Weather in my area
+alias moon="curl http://wttr.in/moon"				# Moon weather
 
 # Network
-alias 666="ss -n -o state established '( dport = :666 or sport = :666 )'"
-alias 80="ss -n -o state established '( dport = :80 or sport = :80 )'"
-alias 443="ss -n -o state established '( dport = :443 or sport = :443 )'"
-alias sshwebserver="ssh -i ~/.ssh/piwebserver baston@192.168.1.5 -p 666"
-alias sshd_logins="sudo journalctl -u sshd"
+alias 666="ss -n -o state established '( dport = :666 or sport = :666 )'"	# Prints active incomeing connections on port 666
+alias 80="ss -n -o state established '( dport = :80 or sport = :80 )'"		# Prints active incomeing connections on port 80 HTTP
+alias 443="ss -n -o state established '( dport = :443 or sport = :443 )'"	# Prints active incomeing connections on port 443 HTTPS
+alias sshwebserver="ssh -i ~/.ssh/piwebserver baston@192.168.1.5 -p 666"	# SSH into my local webserver
+alias sshd_logins="sudo journalctl -u sshd"					# Prints all activity within ssh
 
 # Terminal Open
 fortune
