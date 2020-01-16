@@ -150,6 +150,7 @@ alias c="clear"							# Shortened clear to c because I'm supper lazy
 alias fk='eval "sudo $(history -p !!)"'				# Forgot to sudo say fk it
 alias reboot="sudo reboot"					# Change reboot to sudo reboot
 alias cpuspeed="cat /proc/cpuinfo | grep 'cpu MHz'"		# Read current CPU speed in Mhz
+alias shdwn="shutdown now"					# Fast typed shutdown rushed the command"
 
 # Fun
 alias more=less							# Less is more
